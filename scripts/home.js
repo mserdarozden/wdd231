@@ -33,15 +33,22 @@ function getCurrentYear() {
 
   // Wayfinding 
 
-  const currentPath = window.location.pathname;
-
-  const menuItems = document.querySelectorAll('nav a');
-
-  menuItems.forEach(item => {
-
-    if (item.getAttribute('href') === currentPath) {
- 
-      item.classList.add('active');
-    }
-  });
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all the links in the navigation
+    const navLinks = document.querySelectorAll('nav a');
+    
+    // Get the current URL path, ignoring query strings or parameters
+    const currentPage = window.location.pathname.split('/').pop().split('?')[0];
+    
+    // Loop through the links to find the one that matches the current page
+    navLinks.forEach(function(link) {
+        const href = link.getAttribute('href');
+        
+        // If the href matches the current page, add the "active" class
+        if (href === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});
   
+

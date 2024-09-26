@@ -51,4 +51,12 @@
     .data-grid-item3 {
         grid-column: 1/-1;
     }
+
+    /* Certificates Section */
+
+    #coursesCardsContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
 }
+

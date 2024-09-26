@@ -1,4 +1,4 @@
-export const courses = [
+const courses = [
     {
         subject: 'CSE',
         number: 110,
@@ -74,6 +74,75 @@ export const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: true
+        completed: false
     }
 ]
+
+function createCourseCard(courses) {
+    const card = document.createElement("div");
+
+    if (courses.completed) {
+        card.classList.add("card-complated")
+    } else {
+        card.classList.add("card")
+    }
+
+    const subject = document.createElement("span");
+    subject.textContent = courses.subject + " ";
+    card.appendChild(subject);
+
+    const number = document.createElement("span");
+    number.textContent = courses.number;
+    card.appendChild(number);
+
+    return card;
+}
+
+function displayCourses(filter) {
+    const coursesCardsContainer = document.getElementById("coursesCardsContainer");
+    coursesCardsContainer.innerHTML = "";
+
+    let filteredCourses = courses;
+
+    if (filter === "wdd") {
+        filteredCourses = courses.filter(course => course.subject.toLowerCase() === "wdd");
+    } else if (filter === "cse") {
+        filteredCourses = courses.filter(course => course.subject.toLowerCase() === "cse");
+    }
+
+    filteredCourses.forEach(course => {
+        const courseCard = createCourseCard(course);
+        coursesCardsContainer.append(courseCard);
+    });
+}
+
+document.querySelectorAll("section nav a").forEach(link => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const filter = event.target.getAttribute('data-filter').toLowerCase();
+        displayCourses(filter);
+        displayWayfinding(filter);
+    });
+});
+
+// Initial display
+displayCourses("all");
+
+// Wayfinding 
+function displayWayfinding(filter) {
+    const navLinks = document.querySelectorAll('section nav a');
+
+    navLinks.forEach(function (link) {
+        const dataFilter = link.getAttribute('data-filter');
+        
+        if (dataFilter === filter) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+
+}
+
+displayWayfinding("all");
+

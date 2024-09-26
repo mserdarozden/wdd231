@@ -1,5 +1,6 @@
 body {
     max-width: 1000px;
+    min-width: 400px;
     margin: 0 auto;
     font-family: "Open Sans", sans-serif;
 }
@@ -86,7 +87,7 @@ header h1 {
 }
 
 nav a.active {
-    background-color: yellow;
+    color: yellow;
 }
 
 /* Footer Section*/
@@ -145,4 +146,58 @@ footer p {
 
 }
 
+/* Certificates Section */
+
+section nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--dark-grey-color);
+    
+}
+
+section nav a {
+    color: white;
+    background-color: var(--dark-grey-color);
+    text-align: center;
+    display: block;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    width: 75px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+section nav a:hover {
+    background-color: var(--teal-color);
+}
+
+#coursesCardsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: 1rem;
+
+}
+
+.card {
+    background-color: var(--white-color);
+    color: var(--dark-grey-color);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--dark-grey-color);
+}
+
+.card-complated {
+    background-color: var(--dark-grey-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
 

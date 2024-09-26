@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/home-large.css">
     <script src="scripts/home.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,18 +25,18 @@
         <div>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="">Chamber</a>
-                <a href="" >GitHub Profile</a>
-                <a href="" >LinkedIn</a>
+                <a href="Chamber.html">Chamber</a>
+                <a href="https://github.com/mserdarozden" >GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/m-serdar-%C3%B6-671780150/">Linked In</a>
             </nav>
         </div>
     </header>
     <main>
         <nav class="ham-nav">
             <a href="index.html" >Home</a>
-            <a href="">Chamber</a>
-            <a href="" >GitHub Profile</a>
-            <a href="" >LinkedIn</a>
+            <a href="Chamber.html">Chamber</a>
+            <a href="https://github.com/mserdarozden" >GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/m-serdar-%C3%B6-671780150/">Linked In</a>
         </nav>
         <div class="data-grid-container">
             <section class="data-grid-item1">
@@ -49,12 +50,18 @@
             <section class="data-grid-item2">
                 <h2>Ankara, Turkey</h2>
                 <figure>
-                    <img src="images/ankara.webp" alt="Ankara" />
+                    <img src="images/ankara.webp" alt="Ankara">
                     <figcaption>Anitkabir</figcaption>
                 </figure>
             </section>
             <section class="data-grid-item3">
                 <h2>Web and Computer Programming Certificate</h2>
+                <nav>
+                    <a href="#" data-filter="all">All</a>
+                    <a href="#" data-filter="cse">CSE</a>
+                    <a href="#" data-filter="wdd">WDD</a>
+                </nav>
+                <div id="coursesCardsContainer"></div>
             </section>
         </div>
     </main>
