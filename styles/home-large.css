@@ -54,7 +54,7 @@
 
     /* Certificates Section */
 
-    #coursesCardsContainer {
+    #courses-card-container {
         grid-template-columns: 1fr 1fr 1fr;
     
     }

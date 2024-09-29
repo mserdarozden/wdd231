@@ -178,7 +178,7 @@ section nav a:hover {
     background-color: var(--teal-color);
 }
 
-#coursesCardsContainer {
+#courses-card-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
