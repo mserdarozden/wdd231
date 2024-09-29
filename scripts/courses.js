@@ -170,5 +170,6 @@ function calculateTotalNumberOfCredits(courses) {
     return totalNumberOfCredits;
 }
 
-console.log(calculateTotalNumberOfCredits(courses));
+displayTotalNumberOfCredits("all");
+
 
