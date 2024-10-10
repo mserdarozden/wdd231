@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Chamber of Commerce - Directory" />
+        <meta property="og:description" content="Provides a comprehensive listing of local businesses, services, and organizations in Ankara." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mserdarozden.github.io/wdd231/chamber/directory.html" />
+        <meta property="og:image" content="https://ankara.ktb.gov.tr/Resim/266905,il-md-84jpg.png?0" />
+        <title>Directory</title>
+        <meta name="description" content="Page provides a comprehensive listing of local businesses, services, and organizations in Ankara.">
+        <meta name="author" content="Serdar Ozden">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/chamber.css">
+        <link rel="stylesheet" href="styles/chamber-large.css">
+        <link rel="icon" href="favicon.ico">
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/chamber.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div class="header-container-h">
+            <img src="images/header-image.jpg" alt="Atakule">
+            <div class="header-container-l">
+                <h1>Ankara</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <button id="hamButton"></button>
+        <nav id="staticNav">
+            <ul class="menuLinks">
+                <li><a href="home.html">Home</a></li>
+                <li class="current-menu-item"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="animatedNav">
+        <ul class="menuLinks">
+            <li><a href="home.html">Home</a></li>
+            <li class="current-menu-item"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="card-menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div class="grid" id="cards"></div>    
+    </main>
+    <footer>
+        <div>
+            <p><strong>Ankara Chamber of Commerce</strong></p>
+            <p>Cankaya Cd. 1</p>
+            <p>Çankaya, Ankara 06690</p>
+            <p>info@ankaracc.org</p>
+            <p>0312-123-4567</p>
+        </div>
+        <div>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.svg" alt="X">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>M. Serdar Özden</p>
+            <p>© <span id="currentYear"></span> Ankara Chamber of Commerce</p>
+            <p> Last Modified on: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

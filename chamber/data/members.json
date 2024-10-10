@@ -1,0 +1,93 @@
+[
+    {
+      "name": "Ankara Tech Solutions",
+      "address": "Kavaklıdere Mah. Bestekar Sk. No:30, Çankaya, Ankara",
+      "phone": "+90 312 456 7890",
+      "website": "https://www.ankaratech.com",
+      "iconFile": "ankara_tech.png",
+      "membershipLevel": 3,
+      "additionalInfo": {
+        "founded": 2010,
+        "industry": "Software Development",
+        "services": ["Web Development", "Mobile Apps", "IT Consulting"]
+      }
+    },
+    {
+      "name": "Esen Elektronik",
+      "address": "Atatürk Blv. No:23/5, Kızılay, Ankara",
+      "phone": "+90 312 789 6543",
+      "website": "https://www.esen.com.tr",
+      "iconFile": "esen_electronics.png",
+      "membershipLevel": 2,
+      "additionalInfo": {
+        "founded": 2005,
+        "industry": "Electronics",
+        "services": ["Consumer Electronics", "Wholesale"]
+      }
+    },
+    {
+      "name": "Bilkent Construction",
+      "address": "Ümit Mah. 2457. Sokak No:4, Yenimahalle, Ankara",
+      "phone": "+90 312 368 1122",
+      "website": "https://www.bilkentconstruction.com",
+      "iconFile": "bilkent_construction.png",
+      "membershipLevel": 1,
+      "additionalInfo": {
+        "founded": 1998,
+        "industry": "Construction",
+        "services": ["Commercial Construction", "Residential Construction"]
+      }
+    },
+    {
+      "name": "Metropol Logistics",
+      "address": "İvedik OSB 1536. Cd. No:12, Yenimahalle, Ankara",
+      "phone": "+90 312 398 2345",
+      "website": "https://www.metropollogistics.com.tr",
+      "iconFile": "metropol_logistics.png",
+      "membershipLevel": 3,
+      "additionalInfo": {
+        "founded": 2002,
+        "industry": "Logistics",
+        "services": ["Freight Transport", "Warehousing", "Customs Brokerage"]
+      }
+    },
+    {
+      "name": "Oran Pharmaceuticals",
+      "address": "Çukurambar Mah. 1446. Cd. No:28, Çankaya, Ankara",
+      "phone": "+90 312 587 5678",
+      "website": "https://www.oranpharma.com",
+      "iconFile": "oran_pharma.png",
+      "membershipLevel": 2,
+      "additionalInfo": {
+        "founded": 1995,
+        "industry": "Pharmaceuticals",
+        "services": ["Pharmaceutical Manufacturing", "Research & Development"]
+      }
+    },
+    {
+      "name": "Sade Furniture",
+      "address": "Sincan Organize Sanayi Bölgesi, 1. Cadde No:14, Sincan, Ankara",
+      "phone": "+90 312 543 6789",
+      "website": "https://www.sadefurniture.com",
+      "iconFile": "sade_furniture.png",
+      "membershipLevel": 1,
+      "additionalInfo": {
+        "founded": 2008,
+        "industry": "Furniture Manufacturing",
+        "services": ["Custom Furniture", "Home Furnishings"]
+      }
+    },
+    {
+      "name": "Anadolu Financial Services",
+      "address": "Tunali Hilmi Cad. No: 78, Kavaklıdere, Çankaya, Ankara",
+      "phone": "+90 312 874 3210",
+      "website": "https://www.anadolufinance.com",
+      "iconFile": "anadolu_finance.png",
+      "membershipLevel": 3,
+      "additionalInfo": {
+        "founded": 2012,
+        "industry": "Financial Services",
+        "services": ["Investment Banking", "Wealth Management", "Financial Advisory"]
+      }
+    }
+  ]

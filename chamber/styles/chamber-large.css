@@ -1,0 +1,52 @@
+@media screen and (min-width: 600px) {
+
+    /* Formatting Navigation */
+
+    #hamButton {
+        display: none;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #staticNav {
+        grid-template-rows: 1fr;
+    }
+
+    #staticNav {
+        display: grid;
+    }
+
+    #animatedNav {
+        display: none;
+    }
+
+    /* Formatting footer */
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Formatting cards */
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+    
+    /* Formatting cards in list view */
+    .list section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .list section a {
+        display: block; 
+    }
+
+
+}
