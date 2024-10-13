@@ -1,0 +1,104 @@
+:root {
+    --black-color: #222831;
+    --dark-grey-color: #393E46;
+    --teal-color: #00ADB5;
+    --white-color: #EEEEEE
+}
+
+main {
+    background-color: var(--black-color);
+}
+/* Formatting member cards */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--dark-grey-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    text-align: center;
+    font-size: x-small;
+}
+
+.card img {
+    padding: 1rem;
+    object-fit: cover;
+    width: 150px;
+    height: auto;
+}
+
+.card p,
+.card h2 {
+    margin: .2rem;
+}
+
+.card a {
+    color: inherit; 
+    
+}
+
+/* Formatting list view */
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0;
+    align-items: center;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img,
+.list section a {
+    display: none;
+    /* smaller viewports only */
+}
+
+
+.list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+    background-color: var(--black-color);
+}
+
+.list section h2 {
+    font-size: x-small;
+}
+
+/* Formatting card menu */
+
+.card-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+
+}
+
+#grid {
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+#list {
+    padding: 0.5rem;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Chamber of Commerce - Home">
+    <meta property="og:description" content="Home page of Ankara chamber of commerce.">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mserdarozden.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://ankara.ktb.gov.tr/Resim/266905,il-md-84jpg.png?0">
+    <title>Ankara Chamber of Commerce Home Page</title>
+    <meta name="description" content="Page provides events, wheather and advertisement for Ankara chamber of commerce.">
+    <meta name="author" content="Serdar Ozden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container-h">
+            <img src="images/header-image.jpg" alt="Atakule">
+            <div class="header-container-l">
+                <h1>Ankara</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <button id="hamButton"></button>
+        <nav id="staticNav">
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="animatedNav">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="current-menu-item"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Ankara Chamber of Commerce" width="500" height="250">
+            </picture>
+            <a href="join.html" class="cta-button">Join Now!</a>
+        </div>
+        <h1>Home</h1>
+        <div class="upper-grid-container">
+            <section class="event-section">
+                <h2>Events</h2>
+            </section>
+            <section class="weather-section">
+                <h2>Current Weather</h2>
+                <div class="section-content">
+                    <div class="section-content-heading">
+                        <p>Temperature:</p>
+                        <p>Conditions:</p>
+                        <p>Low:</p>
+                        <p>Hight:</p>
+                    </div>
+                    <div class="section-content-content">
+                        <p id="temp">15°C</p>
+                        <p id="desc">Sunny</p>
+                        <p id="min-temp">14°C</p>
+                        <p id="max-temp">19°C</p>
+                    </div>
+                </div>
+            </section>
+            <section class="weather-section">
+                <h2>Weather Forecast</h2>
+                <div class="section-content">
+                    <div class="section-content-heading">
+                        <p>Today:</p>
+                        <p id="hday2">Day 2:</p>
+                        <p id="hday3">Day 3:</p>
+                    </div>
+                    <div class="section-content-content">
+                        <p id="day1">15°C</p>
+                        <p id="day2">15°C</p>
+                        <p id="day3">15°C</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <h1>Company Spotlights</h1>
+        <div id="cards" class="lower-grid-container">
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left-grid-item">
+            <p><strong>Ankara Chamber of Commerce</strong></p>
+            <p>Cankaya Cd. 1</p>
+            <p>Çankaya, Ankara 06690</p>
+            <p>info@ankaracc.org</p>
+            <p>0312-123-4567</p>
+        </div>
+        <div class="footer-center-grid-item">
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.svg" alt="X">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+        <div class="footer-right-grid-container">
+            <p>WDD231 Class Project</p>
+            <p>M. Serdar Özden</p>
+            <p>© <span id="currentYear"></span> Ankara Chamber of Commerce</p>
+            <p> Last Modified on: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

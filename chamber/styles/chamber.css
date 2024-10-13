@@ -1,5 +1,5 @@
 body {
-    max-width: 1000px;
+    max-width: 1500px;
     min-width: 400px;
     margin: 0 auto;
     font-family: "Open Sans", sans-serif;
@@ -22,6 +22,7 @@ header {
     ;
     padding: 1rem 2rem;
     color: var(--white-color);
+    border-bottom: solid 1px black;
 }
 
 header p {
@@ -93,7 +94,7 @@ ul.menuLinks li a {
     text-decoration: none;
 }
 
-li.current-menu-item a {
+.active {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -123,6 +124,7 @@ footer {
     background-color: var(--black-color);
     padding: 1rem 2rem;
     align-items: center;
+    border-top: solid 1px black;
 }
 
 footer p {
@@ -132,101 +134,11 @@ footer p {
 }
 
 .sociallinks {
-    justify-content: center;
+    display: flex;
 }
 
 .sociallinks img {
     width: 40px;
     height: auto;
     padding-left: 10px;
-}
-
-/* Formatting member cards */
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    margin: 1rem;
-}
-
-.card {
-    background-color: var(--white-color);
-    color: var(--dark-grey-color);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
-    border: 1px solid lightgray;
-    text-align: center;
-    font-size: x-small;
-}
-
-.card img {
-    padding: 1rem;
-    object-fit: cover;
-    width: 150px;
-    height: auto;
-}
-
-.card p,
-.card h2 {
-    margin: .2rem;
-}
-
-/* Formatting list view */
-.list {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-}
-
-.list section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
-    padding: 1rem;
-    border-radius: 0;
-    align-items: center;
-}
-
-.list section>* {
-    margin: 0 1rem;
-}
-
-.list section img,
-.list section a {
-    display: none;
-    /* smaller viewports only */
-}
-
-
-.list section h3 {
-    font-size: 1rem;
-    font-family: Roboto, Helvetica, sans-serif;
-}
-
-.list section:nth-child(even) {
-    background-color: lightgray;
-}
-
-.list section h2 {
-    font-size: x-small;
-}
-
-/* Formatting card menu */
-
-.card-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-#grid {
-    margin-right: 1rem;
-    padding: 0.5rem;
-}
-
-#list {
-    padding: 0.5rem;
 }

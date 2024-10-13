@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --black-color: #222831;
+    --dark-grey-color: #393E46;
+    --teal-color: #00ADB5;
+    --white-color: #EEEEEE
+}
+
+h2 {
+    font-size: medium;
+}
+/* Formatting Hero Image */
+
+.hero {
+    position: relative;
+}
+
+picture {
+    background-color: var(--black-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-color: var(--teal-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Formatting home heading */
+
+main h1 {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Formatting upper grid container */
+
+.upper-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+    background-color: var(--black-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    font-size: small;
+
+}
+
+.event-section,
+.weather-section {
+    background-color: var(--dark-grey-color);
+    padding: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+
+}
+
+/* Formatting current weather container */
+
+.upper-grid-container h2 {
+    border-bottom: solid 1px var(--teal-color);
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content-heading {
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.section-content-content {
+    text-align: left;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+
+
+/* Formatting lower grid container */
+
+.lower-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--black-color);
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    font-size: small;
+
+}
+
+.card {
+    background-color: var(--dark-grey-color);
+    padding: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+}
+
+.upper-card {
+    text-align: center;
+    border-bottom: solid 1px var(--teal-color);
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.upper-card h2,
+.upper-card p {
+    margin: 0;
+}
+
+.lower-card {
+    display: flex;
+}
+
+.lower-card img {
+    padding: 1rem;
+    object-fit: cover;
+    width: 100px;
+    height: auto;
+}
+
+.lower-card-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.lower-card p {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.lower-card a {
+    color: inherit;
+}
+

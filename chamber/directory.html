@@ -8,7 +8,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://mserdarozden.github.io/wdd231/chamber/directory.html">
         <meta property="og:image" content="https://ankara.ktb.gov.tr/Resim/266905,il-md-84jpg.png?0">
-        <title>Chamber of Commerce Directory Page</title>
+        <title>Ankara Chamber of Commerce Directory Page</title>
         <meta name="description" content="Page provides a comprehensive listing of local businesses, services, and organizations in Ankara.">
         <meta name="author" content="Serdar Ozden">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/chamber.css">
         <link rel="stylesheet" href="styles/chamber-large.css">
+        <link rel="stylesheet" href="styles/directories.css">
+        <link rel="stylesheet" href="styles/directories-large.css">
         <link rel="icon" href="favicon.ico">
         <script src="scripts/main.js" defer></script>
         <script src="scripts/chamber.js" defer></script>
@@ -34,7 +36,7 @@
         <button id="hamButton"></button>
         <nav id="staticNav">
             <ul class="menuLinks">
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="current-menu-item"><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -44,7 +46,7 @@
 
     <nav id="animatedNav">
         <ul class="menuLinks">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="current-menu-item"><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
@@ -59,14 +61,14 @@
         <div class="grid" id="cards"></div>    
     </main>
     <footer>
-        <div>
+        <div class="footer-left-grid-item">
             <p><strong>Ankara Chamber of Commerce</strong></p>
             <p>Cankaya Cd. 1</p>
             <p>Çankaya, Ankara 06690</p>
             <p>info@ankaracc.org</p>
             <p>0312-123-4567</p>
         </div>
-        <div>
+        <div class="footer-center-grid-item">
             <nav class="sociallinks">
                 <a href="https://facebook.com">
                     <img src="images/facebook.svg" alt="Facebook">
@@ -79,7 +81,7 @@
                 </a>
             </nav>
         </div>
-        <div>
+        <div class="footer-right-grid-container">
             <p>WDD231 Class Project</p>
             <p>M. Serdar Özden</p>
             <p>© <span id="currentYear"></span> Ankara Chamber of Commerce</p>
