@@ -31,8 +31,9 @@ picture {
     position: absolute;
     bottom: 50px;
     right: 50px;
-    background-color: var(--teal-color);
+    background-color: var(--dark-grey-color);
     color: #ffffff;
+    border: solid 2px var(--teal-color);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
