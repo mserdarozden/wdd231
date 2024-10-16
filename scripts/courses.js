@@ -80,6 +80,7 @@ const courses = [
 
 function createCourseCard(courses) {
     const card = document.createElement("div");
+    card.addEventListener("click", () => {showDialog(courses)});
 
     if (courses.completed) {
         card.classList.add("card-complated")
@@ -171,5 +172,29 @@ function calculateTotalNumberOfCredits(courses) {
 }
 
 displayTotalNumberOfCredits("all");
+
+// Creating Diolog
+
+const dialogBox = document.querySelector("#dialogBox");
+const diologHeading = document.querySelector("#diologHeading");
+const diologCredits = document.querySelector("#diologCredits");
+const diologCertificate = document.querySelector("#diologCertificate");
+const diologDescription = document.querySelector("#diologDescription");
+const diologTechnology = document.querySelector("#diologTechnology");
+const closeButton = document.querySelector("#closeButton");
+
+closeButton.addEventListener("click", () => {
+    dialogBox.close();
+})
+
+function showDialog(data) {
+    dialogBox.showModal();
+    diologHeading.textContent = data.title;
+    diologCredits.textContent = `${data.credits} Credits;`
+    diologCertificate.textContent = `Certificate: ${data.certificate};`
+    diologDescription.textContent = data.description;
+    diologTechnology.textContent = `Technology: ${data.technology};`
+
+}
 
 

@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --black-color: #222831;
+    --dark-grey-color: #393E46;
+    --teal-color: #00ADB5;
+    --white-color: #EEEEEE
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+main h1 {   
+    color: var(--white-color);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+main div {
+    background-color: var(--dark-grey-color);
+    padding: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+main div h2 {
+    text-align: center;
+    border-bottom: solid 1px var(--teal-color);
+    margin: 0;
+    padding: 0.5rem;
+}

@@ -201,3 +201,19 @@ section nav a:hover {
     border-radius: 0.5rem;
 }
 
+/* Formatting dialog box */
+
+#dialogBox {
+    width: 50%;
+}
+
+.dialog-box-header {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+#diologHeading {
+    background-color: white;
+    color: black;
+}
+

@@ -1,0 +1,42 @@
+[
+    {
+        "level": "Non-Profit Membership Level",
+        "description": "Ideal for non-profit organizations seeking to collaborate and access key resources.",
+        "benefits": [
+            "Access to community forums and resources.",
+            "Discounted event fees for non-profits.",
+            "Opportunities to partner on community projects."
+        ],
+        "cost": "Free"
+    },
+    {
+        "level": "Bronze Membership Level",
+        "description": "Entry-level membership offering essential resources for small businesses.",
+        "benefits": [
+            "Basic access to community services and networking events.",
+            "Discounts on selected events.",
+            "Opportunity for local advertising."
+        ],
+        "cost": "100$"
+    },
+    {
+        "level": "Silver Membership Level",
+        "description": "Enhanced benefits for growing businesses looking to expand.",
+        "benefits": [
+            "Priority support and extended event discounts.",
+            "Advertising opportunities with spotlight positions.",
+            "Access to Silver-exclusive events and workshops."
+        ],
+        "cost": "500$"
+    },
+    {
+        "level": "Gold Membership Level",
+        "description": "Premium membership for maximum exposure and top-tier benefits.",
+        "benefits": [
+            "Personalized support and training sessions.",
+            "Premium advertising slots and VIP event access.",
+            "Exclusive invitations to Gold-only events and recognition opportunities."
+        ],
+        "cost": "1000$"
+    }
+]
