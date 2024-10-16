@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Chamber of Commerce - Join">
     <meta property="og:description" content="Provides a form to join Ankara chamber of commerce.">
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://mserdarozden.github.io/wdd231/chamber/join.html">
     <meta property="og:image" content="https://ankara.ktb.gov.tr/Resim/266905,il-md-84jpg.png?0">
     <title>Ankara Chamber of Commerce Join Page</title>
@@ -60,42 +60,42 @@
             <form method="get" action="thankyou.html" class="membership-form">
                 <h1>Membership Form</h1>
                 <label>First name* <input type="text" id="fname-select" name="fname" title="Applicant's First Name"
-                        autocomplate="given-name" required></label>
+                    autocomplete="given-name" required></label>
                 <label>Last name* <input type="text" id="lname-select" name="lname" title="Applicant's Last Name"
-                        autocomplate="family-name" required></label>
+                    autocomplete="family-name" required></label>
                 <label>Organizational title (optional) <input type="text" id="title-select" name="title"
-                        title="Applicant's Organizational Title" autocomplate="organization-title"
+                        title="Applicant's Organizational Title" autocomplete="organization-title"
                         pattern="[A-Za-z\s\-]{7,}"></label>
                 <label>E-mail* <input type="email" id="name-email" name="email" title="Applicant's Email Address"
-                        autocomplate="email" placeholder="example@email.com" required></label>
+                    autocomplete="email" placeholder="example@email.com" required></label>
                 <label>Mobile phone number* <input type="tel" id="phone-select" name="phone"
-                        title="Applicant's Mobile Phone Number" autocomplate="tel" required></label>
+                        title="Applicant's Mobile Phone Number" autocomplete="tel" required></label>
                 <label>Business/organization's name* <input type="text" id="bname-select" name="bname"
-                        title="Business/Organization Name" autocomplate="organization" required></label>
+                        title="Business/Organization Name" autocomplete="organization" required></label>
                 <label>Membership level (optional)</label>
                 <div class="radio-container">
                     <div class="radio-item">
                         <input type="radio" id="npm-select" name="membership" title="Select Membership Level"
                             value="Non-Profit-Membership">
-                        <label for="npm">NP Membership is for non-profit organizations and there is no fee.</label><br>
+                        <label for="npm-select">NP Membership is for non-profit organizations and there is no fee.</label><br>
                     </div>
                     <div class="radio-item">
                         <input type="radio" id="bronze-select" name="membership" value="Bronze-Membership">
-                        <label for="bronze">Bronze Membership.</label><br>
+                        <label for="bronze-select">Bronze Membership.</label><br>
                     </div>
                     <div class="radio-item">
                         <input type="radio" id="silver-select" name="membership" value="Silver-Membership">
-                        <label for="silver">Silver Membership.</label><br>
+                        <label for="silver-select">Silver Membership.</label><br>
                     </div>
                     <div class="radio-item">
                         <input type="radio" id="gold-select" name="membership" value="Gold-Membership">
-                        <label for="gold">Gold Membership.</label><br>
+                        <label for="gold-select">Gold Membership.</label><br>
                     </div>
                 </div>
 
                 <label>Business/organization's description (optional) <textarea id="description-select"
                         name="description" title="Business/Organization's Description"
-                        autocomplate="no"></textarea></label>
+                        autocomplete="off"></textarea></label>
 
                         <input type="hidden" id="timestamp" name="timestamp">
 
@@ -125,7 +125,7 @@
                 <div class="button-div">
                     <button id="closeButton">x</button>
                 </div>
-                <h2 id="heading"></h2>
+                <h2 id="heading">Membership Level</h2>
                 <div id="benefits">
                     <h3>Benefits</h3>
                     <ol>
