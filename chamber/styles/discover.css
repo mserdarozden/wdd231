@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: #222831;
+    --dark-grey-color: #393E46;
+    --teal-color: #00ADB5;
+    --white-color: #EEEEEE;
+}
+
+/* Formatting main container */
+
+main {
+    background-color: var(--black-color);
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    font-size: small;
+}
+
+.last-visit-grid-item {
+    background-color: var(--dark-grey-color);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+
+.sidebar-flag-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-grey-color);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+}
+
+.sidebar-flag-grid-item img {
+    width: 100px;
+    height: auto;
+    background-color: var(--white-color);
+    padding: 1rem;
+}
+
+.sidebar-flag-grid-item p {
+    text-align: center;
+    line-height: 24px;
+}
+
+.sidebar-statistic-grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-grey-color);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+
+
+}
+
+.statistic-heading {
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.statistic-content {
+    text-align: left;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+/* Formatting Photos container */
+
+.photos-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-right: 1rem;
+
+}
+
+figure {
+    margin: 1rem;
+    margin-right: 0;
+    padding: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    background-color: var(--dark-grey-color);
+}
+
+figure div {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 0.2rem;
+    color: var(--white-color);
+    font-size: large;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Formatting current weather container */
+
+.weather-section {
+    background-color: var(--dark-grey-color);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+
+}
+
+
+.weather-section h2 {
+    border-bottom: solid 1px var(--teal-color);
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content-heading {
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.section-content-content {
+    text-align: left;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Chamber of Commerce - Discover">
+    <meta property="og:description"
+        content="Promotes the Ankara through demographic content, statistics, and area imagery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mserdarozden.github.io/wdd231/chamber/discover.html">
+    <meta property="og:image" content="https://ankara.ktb.gov.tr/Resim/266905,il-md-84jpg.png?0">
+    <title>Ankara Chamber of Commerce Discover Page</title>
+    <meta name="description" content="Promotes the Ankara through demographic content, statistics, and area imagery.">
+    <meta name="author" content="Serdar Ozden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
+    <link rel="stylesheet" href="styles/calender.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/calender.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container-h">
+            <img src="images/header-image.jpg" alt="Atakule">
+            <div class="header-container-l">
+                <h1>Ankara</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <button id="hamButton"></button>
+        <nav id="staticNav">
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li class="current-menu-item"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="animatedNav">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="current-menu-item"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-grid-container">
+            <div class="sidebar-grid-container">
+                <div class="last-visit-grid-item">
+                    <p id="lastVisit"></p>
+                </div>
+                <div class="sidebar-flag-grid-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Ankara_City_Logo.svg" alt="Ankara Amblem">
+                    <p>Ankara, historically known as Ancyra and Angora, is the capital of Turkey. Located in the central
+                        part of Anatolia, the city has a population of 5.1 million in its urban center and 5.8 million
+                        in Ankara Province, making it Turkey's second-largest city after Istanbul, but the first by
+                        urban area.</p>
+                </div>
+                <div class="sidebar-statistic-grid-item">
+                    <div class="statistic-heading">
+                        <p>Country:</p>
+                        <p>Region:</p>
+                        <p>Mayor:</p>
+                        <p>Urban area:</p>
+                        <p>Population:</p>
+                        <p>GDP:</p>
+                        <p>Time zone:</p>
+                        <p>Postal code:</p>
+                        <p>Area code:</p>
+                    </div>
+                    <div class="statistic-content">
+                        <p>Turkey</p>
+                        <p>Central Anatolia</p>
+                        <p>Mansur Yavaş</p>
+                        <p>4,130.2 km2</p>
+                        <p>5,803,482</p>
+                        <p>US$ 81 billion</p>
+                        <p>UTC+3</p>
+                        <p>06xxx</p>
+                        <p>+90 312</p>
+                    </div>
+                </div>
+                <div class="calendar"></div>
+                <div class="weather-section">
+                    <h2>Current Weather</h2>
+                    <div class="section-content">
+                        <div class="section-content-heading">
+                            <p>Temperature:</p>
+                            <p>Conditions:</p>
+                            <p>Low:</p>
+                            <p>Hight:</p>
+                        </div>
+                        <div class="section-content-content">
+                            <p id="temp">15°C</p>
+                            <p id="desc">Sunny</p>
+                            <p id="min-temp">14°C</p>
+                            <p id="max-temp">19°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-section">
+                    <h2>Weather Forecast</h2>
+                    <div class="section-content">
+                        <div class="section-content-heading">
+                            <p>Today:</p>
+                            <p id="hday2">Day 2:</p>
+                            <p id="hday3">Day 3:</p>
+                        </div>
+                        <div class="section-content-content">
+                            <p id="day1">15°C</p>
+                            <p id="day2">15°C</p>
+                            <p id="day3">15°C</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos-grid-container">
+                <div class="gallery">
+                    <figure>
+                        <div>
+                            <picture>
+                                <source srcset="images/1024px-Ankara_from_bus_station.jpg" media="(min-width: 1000px)">
+                                <source srcset="images/640px-Ankara_from_bus_station.jpg" media="(min-width: 500px)">
+                                <img src="images/320px-Ankara_from_bus_station.jpg" alt="Ankara from Bus Station"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <figcaption>Ankara from Bus Station</figcaption>
+                    </figure>
+
+                    <figure>
+                        <div>
+                            <picture>
+                                <source srcset="images/Ankara_asv2021-10_img04_Anıtkabir.jpg"
+                                    media="(min-width: 1000px)">
+                                <source srcset="images/Ankara_asv2021-10_img04_Anıtkabir-2.jpg"
+                                    media="(min-width: 500px)">
+                                <img src="images/Ankara_asv2021-10_img04_Anıtkabir-3.jpg" alt="Anıtkabir"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <figcaption>Anıtkabir</figcaption>
+                    </figure>
+
+                    <figure>
+                        <div>
+                            <picture>
+                                <source srcset="images/Ankara_asv2021-10_img64_Arts_and_Sculpture_Museum.jpg"
+                                    media="(min-width: 1000px)">
+                                <source srcset="images/Ankara_asv2021-10_img64_Arts_and_Sculpture_Museum-2.jpg"
+                                    media="(min-width: 500px)">
+                                <img src="images/Ankara_asv2021-10_img64_Arts_and_Sculpture_Museum-3.jpg"
+                                    alt="Arts and Sculpture Museum" loading="lazy">
+                            </picture>
+                        </div>
+                        <figcaption>Arts and Sculpture Museum</figcaption>
+                    </figure>
+
+                    <figure>
+                        <div>
+                            <picture>
+                                <source srcset="images/Hittite_Sun_Course_Monument.jpg" media="(min-width: 1000px)">
+                                <source srcset="images/Hittite_Sun_Course_Monument-2.jpg" media="(min-width: 500px)">
+                                <img src="images/Hittite_Sun_Course_Monument-3.jpg" alt="Hittite Sun Course Monument"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <figcaption>Hittite Sun Course Monument</figcaption>
+                    </figure>
+
+                    <figure>
+                        <div>
+                            <picture>
+                                <source srcset="images/Ankara_asv2021-10_img19_Railway_station.jpg"
+                                    media="(min-width: 1000px)">
+                                <source srcset="images/Ankara_asv2021-10_img19_Railway_station-2.jpg"
+                                    media="(min-width: 500px)">
+                                <img src="images/Ankara_asv2021-10_img19_Railway_station-3.jpg"
+                                    alt="Ankara Railway Station" loading="lazy">
+                            </picture>
+                        </div>
+                        <figcaption>Ankara Railway Station</figcaption>
+                    </figure>
+
+                    <figure>
+                        <div>
+                            <picture>
+                                <source srcset="images/1024px-Göksupark_Ankara_-_21821118323.jpg"
+                                    media="(min-width: 1000px)">
+                                <source srcset="images/640px-Göksupark_Ankara_-_21821118323.jpg"
+                                    media="(min-width: 500px)">
+                                <img src="images/320px-Göksupark_Ankara_-_21821118323.jpg" alt="Göksupark Ankara"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <figcaption>Göksupark Ankara</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left-grid-item">
+            <p><strong>Ankara Chamber of Commerce</strong></p>
+            <p>Cankaya Cd. 1</p>
+            <p>Çankaya, Ankara 06690</p>
+            <p>info@ankaracc.org</p>
+            <p>0312-123-4567</p>
+        </div>
+        <div class="footer-center-grid-item">
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.svg" alt="X">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+        <div class="footer-right-grid-container">
+            <p>WDD231 Class Project</p>
+            <p>M. Serdar Özden</p>
+            <p>© <span id="currentYear"></span> Ankara Chamber of Commerce</p>
+            <p> Last Modified on: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

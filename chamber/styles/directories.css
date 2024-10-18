@@ -2,7 +2,7 @@
     --black-color: #222831;
     --dark-grey-color: #393E46;
     --teal-color: #00ADB5;
-    --white-color: #EEEEEE
+    --white-color: #EEEEEE;
 }
 
 main {
@@ -48,7 +48,7 @@ main {
 .list {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .list section {
