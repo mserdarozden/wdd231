@@ -17,7 +17,9 @@ async function getFleetData() {
     }
 }
 
-getFleetData();
+window.addEventListener('load', () => {
+    getFleetData();
+});
 
 // Display Fleet information
 
