@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Horizon Flight Academy - Home">
+    <meta property="og:description" content="Home page of Horizon Flight Academy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mserdarozden.github.io/wdd231/horizon/index.html">
+    <meta property="og:image" content="https://www.bestaviation.net/static/img/schools/img_4131512510600.jpg">
+    <title>Horizon Flight Academy Home Page</title>
+    <meta name="description"
+        content="Horizon Flight Academy offers expert pilot training programs to help aspiring aviators achieve their goals. Explore our courses, fleet, and enrollment options.">
+    <meta name="author" content="Serdar Ozden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/shared-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/shared.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container-h">
+            <img src="images/logo.png" alt="Logo">
+            <div class="header-container-l">
+                <h1>Horizon Flight Academy</h1>
+            </div>
+        </div>
+        <button id="hamButton"></button>
+        <nav id="staticNav">
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trainings.html">Trainings</a></li>
+                <li><a href="fleet.html">Fleet</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="animatedNav">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trainings.html">Trainings</a></li>
+            <li><a href="fleet.html">Fleet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Ankara Chamber of Commerce" width="500" height="250">
+            </picture>
+            <p id="lastVisit">Last Visit:</p>
+            <a href="contact.html" class="cta-button">Contact Now!</a>
+        </div>
+        <h1>Our Trainings</h1>
+        <div class="cards" id="training-cards"></div>
+        <h1>About Us</h1>
+        <div class="testimonial-about-grid-container">
+            <div class="testimonials" id="testimonal-cards">
+            </div>
+            <div class="about-us-container">
+                <h2>We Are</h2>
+                <p>Horizon Flight Academy stands at the forefront of aviation education, dedicated to training the next
+                    generation of skilled and confident pilots. Our mission is to provide comprehensive, high-quality
+                    training that equips students with the knowledge, skills, and experience needed to excel in the
+                    aviation
+                    industry. Whether you're aiming to earn your private pilot license or pursuing advanced
+                    certifications,
+                    Horizon Flight Academy offers a range of programs designed to meet diverse goals and aspirations.
+                </p>
+
+                <p>Our academy features a state-of-the-art fleet, including single and multi-engine aircraft, equipped
+                    with
+                    the latest avionics and safety features to ensure a modern and realistic training experience. Our
+                    team
+                    of highly qualified instructors brings years of expertise, providing personalized instruction that
+                    adapts to each student's pace and learning style. We are committed to creating a supportive and
+                    motivating environment where students feel confident and empowered to achieve their best.</p>
+            </div>
+        </div>
+        <h1>Our Fleet</h1>
+        <div class="fleet" id="fleet-cards"></div>
+    </main>
+
+
+    <footer>
+        <div class="footer-left-grid-item">
+            <p><strong>Horizon Flight Academy</strong></p>
+            <p>Cankaya Cd. 1</p>
+            <p>Çankaya, Ankara 06690</p>
+            <p>info@horizonflightacademy.org</p>
+            <p>0312-123-4567</p>
+        </div>
+        <div class="footer-center-grid-item">
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.svg" alt="X">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+        <div class="footer-right-grid-container">
+            <p>WDD231 Class Project</p>
+            <p>M. Serdar Özden</p>
+            <p>© <span id="currentYear"></span> Horizon Flight Academy</p>
+            <p> Last Modified on: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+:root {
+    --black-color: #222831;
+    --dark-grey-color: #393E46;
+    --teal-color: #00ADB5;
+    --white-color: #EEEEEE;
+}
+
+main {
+    background-color: var(--black-color);
+}
+/* Formatting aircraft cards */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+figure {
+    margin: 1rem;
+    margin-right: 0;
+    padding: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    background-color: var(--dark-grey-color);
+}
+
+figure div {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 0.2rem;
+    color: var(--white-color);
+    font-size: large;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Formatting diologbox cards */
+
+
+#diolog-cards {
+    width: 600px;
+    height: auto;
+}
+
+#diolog-cards p, h2 {
+border-bottom: 1px solid lightgray;
+margin: 0;
+padding: 0.5rem;
+}
+
+#diolog-cards .button-container {
+    display: flex;
+    justify-content: flex-end;
+}

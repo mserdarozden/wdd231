@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "author": "John Smith",
+        "text": "Horizon Flight Academy provided me with the knowledge and confidence I needed to become a commercial pilot. The instructors were incredibly supportive and the training aircraft were top-notch!",
+        "image_url": "images/john_smith.webp"
+    },
+    {
+        "id": 2,
+        "author": "Sarah Johnson",
+        "text": "The training programs at Horizon Flight Academy were perfectly tailored to my learning pace. I felt prepared and well-equipped for my private pilot license exam. Highly recommend!",
+        "image_url": "images/sarah_johnson.webp"
+    },
+    {
+        "id": 3,
+        "author": "Carlos Ramirez",
+        "text": "From the advanced equipment to the skilled instructors, everything at Horizon exceeded my expectations. I completed my instrument rating here and it was a fantastic experience.",
+        "image_url": "images/carlos_ramirez.webp"
+    },
+    {
+        "id": 4,
+        "author": "Emily Zhang",
+        "text": "As an international student, I was worried about training in a foreign country, but Horizon Flight Academy made me feel at home. The staff was incredibly welcoming and supportive!",
+        "image_url": "images/emily_zhang.webp"
+    },
+    {
+        "id": 5,
+        "author": "Michael Brown",
+        "text": "Horizon Flight Academy's multi-engine training was outstanding. The instructors were patient and knowledgeable, and I felt completely safe and ready to take on new challenges.",
+        "image_url": "images/michael_brown.webp"
+    }
+]

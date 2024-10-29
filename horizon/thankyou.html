@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Flight Academy Thank You Page</title>
+    <meta name="description"
+        content="Creates thank you message for registering users">
+    <meta name="author" content="Serdar Ozden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/shared-large.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/thankyou-large.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/shared.js" defer></script>
+    <script src="scripts/thankyou.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container-h">
+            <img src="images/logo.png" alt="Logo">
+            <div class="header-container-l">
+                <h1>Horizon Flight Academy</h1>
+            </div>
+        </div>
+        <button id="hamButton"></button>
+        <nav id="staticNav">
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trainings.html">Trainings</a></li>
+                <li><a href="fleet.html">Fleet</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="animatedNav">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trainings.html">Trainings</a></li>
+            <li><a href="fleet.html">Fleet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Thank you for registering!</h1>
+        <p>One of our instructors will get in touch with you soon.</p>
+        <div>
+            <h2>Details</h2>
+            <p id="fname">First name:</p>
+            <p id="lname">Last name:</p>
+            <p id="email">E-mail:</p>
+            <p id="phone">Mobile Phone Number:</p>
+            <p id="ttype">Registered Training:</p>
+            <p id="timestamp">Date and time:</p>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-left-grid-item">
+            <p><strong>Horizon Flight Academy</strong></p>
+            <p>Cankaya Cd. 1</p>
+            <p>Çankaya, Ankara 06690</p>
+            <p>info@horizonflightacademy.org</p>
+            <p>0312-123-4567</p>
+        </div>
+        <div class="footer-center-grid-item">
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.svg" alt="X">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+        <div class="footer-right-grid-container">
+            <p>WDD231 Class Project</p>
+            <p>M. Serdar Özden</p>
+            <p>© <span id="currentYear"></span> Horizon Flight Academy</p>
+            <p> Last Modified on: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

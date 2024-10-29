@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Horizon Flight Academy - Contact">
+    <meta property="og:description" content="Contact page of Horizon Flight Academy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mserdarozden.github.io/wdd231/horizon/contact.html">
+    <meta property="og:image" content="https://www.bestaviation.net/static/img/schools/img_4131512510600.jpg">
+    <title>Horizon Flight Academy Contact Page</title>
+    <meta name="description"
+        content="Get in touch with Horizon Flight Academy for inquiries about pilot training programs, enrollment details, or general information. We're here to help you on your aviation journey!">
+    <meta name="author" content="Serdar Ozden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/shared-large.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact-large.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/shared.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container-h">
+            <img src="images/logo.png" alt="Logo">
+            <div class="header-container-l">
+                <h1>Horizon Flight Academy</h1>
+            </div>
+        </div>
+        <button id="hamButton"></button>
+        <nav id="staticNav">
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trainings.html">Trainings</a></li>
+                <li><a href="fleet.html">Fleet</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="animatedNav">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trainings.html">Trainings</a></li>
+            <li><a href="fleet.html">Fleet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-flexbox-container">
+            <form method="get" action="thankyou.html" class="membership-form">
+                <h1>Register Form</h1>
+                <label>First name* <input type="text" id="fname-select" name="fname" title="Applicant's First Name"
+                        autocomplete="given-name" required></label>
+                <label>Last name* <input type="text" id="lname-select" name="lname" title="Applicant's Last Name"
+                        autocomplete="family-name" required></label>
+                <label>E-mail* <input type="email" id="name-email" name="email" title="Applicant's Email Address"
+                        autocomplete="email" placeholder="example@email.com" required></label>
+                <label>Mobile phone number* <input type="tel" id="phone-select" name="phone"
+                        title="Applicant's Mobile Phone Number" autocomplete="tel" required></label>
+
+                <label for="training-select">Training Type*
+                    <select id="training-select" name="training" required>
+                        <option value="" disabled selected>Select a Training ...</option>
+                    </select>
+                </label>
+
+                <label>Additional notes (optional) <textarea id="notes-select" name="notes"
+                        title="Additional notes" autocomplete="off"></textarea></label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <div class="submit-button-container">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+            <div class="right-flex-container">
+                <div class="adress-container">
+                    
+                    <div class="adress-item">
+                        <h2>Adress</h2>
+                        <p><strong>Horizon Flight Academy</strong></p>
+                        <p>Cankaya Cd. 1</p>
+                        <p>Çankaya, Ankara 06690</p>
+                        <p>info@horizonflightacademy.org</p>
+                        <p>0312-123-4567</p>
+                    </div>
+                    <section class="weather-section">
+                        <h2>Current Weather</h2>
+                        <div class="section-content">
+                            <div class="section-content-heading">
+                                <p>Temperature:</p>
+                                <p>Conditions:</p>
+                                <p>Low:</p>
+                                <p>Hight:</p>
+                            </div>
+                            <div class="section-content-content">
+                                <p id="temp">15°C</p>
+                                <p id="desc">Sunny</p>
+                                <p id="min-temp">14°C</p>
+                                <p id="max-temp">19°C</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="weather-section">
+                        <h2>Weather Forecast</h2>
+                        <div class="section-content">
+                            <div class="section-content-heading">
+                                <p>Today:</p>
+                                <p id="hday2">Day 2:</p>
+                                <p id="hday3">Day 3:</p>
+                            </div>
+                            <div class="section-content-content">
+                                <p id="day1">15°C</p>
+                                <p id="day2">15°C</p>
+                                <p id="day3">15°C</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="map-container">
+                    <iframe class="iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8541.052288773475!2d32.68431419436899!3d39.95622913875364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1730104898763!5m2!1str!2str"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-left-grid-item">
+            <p><strong>Horizon Flight Academy</strong></p>
+            <p>Cankaya Cd. 1</p>
+            <p>Çankaya, Ankara 06690</p>
+            <p>info@horizonflightacademy.org</p>
+            <p>0312-123-4567</p>
+        </div>
+        <div class="footer-center-grid-item">
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.svg" alt="X">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+        <div class="footer-right-grid-container">
+            <p>WDD231 Class Project</p>
+            <p>M. Serdar Özden</p>
+            <p>© <span id="currentYear"></span> Horizon Flight Academy</p>
+            <p> Last Modified on: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

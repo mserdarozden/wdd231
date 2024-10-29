@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Private Pilot License (PPL)",
+        "description": "A comprehensive course designed to help aspiring pilots obtain their private pilot license, allowing them to fly non-commercial aircraft.",
+        "duration": "3 months",
+        "requirements": "Minimum age of 17, medical certificate",
+        "image_url": "images/ppl.webp"
+      },
+      {
+        "id": 2,
+        "name": "Commercial Pilot License (CPL)",
+        "description": "Advanced training focused on preparing students for a career in commercial aviation, with an emphasis on professional skills and safety.",
+        "duration": "6 months",
+        "requirements": "PPL, 150 flight hours",
+        "image_url": "images/cpl.webp"
+      },
+      {
+        "id": 3,
+        "name": "Instrument Rating (IR)",
+        "description": "Provides pilots with the skills to fly aircraft in low visibility conditions using instruments for navigation and control.",
+        "duration": "2 months",
+        "requirements": "PPL or CPL, 50 cross-country flight hours",
+        "image_url": "images/ir.webp"
+      },
+      {
+        "id": 4,
+        "name": "Multi-Engine Rating (MER)",
+        "description": "A specialized course for pilots seeking to operate aircraft with more than one engine, focusing on handling multi-engine planes.",
+        "duration": "1 month",
+        "requirements": "PPL or CPL, 70 flight hours",
+        "image_url": "images/mep.webp"
+      },
+      {
+        "id": 5,
+        "name": "Certified Flight Instructor (CFI)",
+        "description": "A training program designed to prepare experienced pilots to teach and mentor future aviators, providing certification as a flight instructor.",
+        "duration": "3 months",
+        "requirements": "CPL, 200 flight hours",
+        "image_url": "images/fi.webp"
+      },
+      {
+        "id": 6,
+        "name": "Night Rating",
+        "description": "Training designed to enable pilots to fly safely at night, covering night-specific flight techniques and safety protocols.",
+        "duration": "1 month",
+        "requirements": "PPL, 10 night flight hours",
+        "image_url": "images/night.webp"
+      },
+      {
+        "id": 7,
+        "name": "Airline Transport Pilot License (ATPL)",
+        "description": "The highest level of certification for pilots, focused on preparing students for airline operations and leadership positions.",
+        "duration": "12 months",
+        "requirements": "CPL, 250 flight hours",
+        "image_url": "images/atpl.webp"
+      },
+      {
+        "id": 8,
+        "name": "Mountain Flying Course",
+        "description": "Specialized training for flying in mountainous terrain, focusing on navigation, altitude control, and dealing with weather conditions.",
+        "duration": "2 weeks",
+        "requirements": "PPL or CPL",
+        "image_url": "images/mountain.webp"
+      }
+]

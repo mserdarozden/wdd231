@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: #222831;
+    --dark-grey-color: #393E46;
+    --grey-color: rgba(211, 211, 211, 0.751);
+    --teal-color: #00ADB5;
+    --white-color: #EEEEEE
+}
+
+.main-flexbox-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Formatting Form */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-grey-color);
+    color: var(--white-color);
+    padding: 1rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+
+    margin: 1rem;
+
+}
+
+main h2 {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="tel"],
+form input[type="email"] {
+    background-color: var(--grey-color);
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    margin: 0;
+}
+
+form select {
+    display: block;
+    height: 42px;
+    background-color: var(--grey-color);
+    border: solid 1px #999;
+    width: 100%;
+    color: #555;
+    border-radius: 6px;
+
+
+}
+
+label {
+    padding-top: 1rem;
+}
+
+form textarea {
+    height: 100px;
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="submit"] {
+    background-color: var(--grey-color);
+    color: black;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 80%;
+    max-width: 400px;
+    margin: 1rem;
+    font-size: .9rem;
+}
+
+input::placeholder {
+    color: var(--dark-grey-color);
+    /* Change the color */
+
+}
+
+/* Formatting map container */
+
+.right-flexbox-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.adress-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.map-container {
+    margin: 1rem;
+    background-color: var(--dark-grey-color);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+}
+
+.iframe {
+    padding: 1rem;
+    width: 100%;
+    height: 450px;
+}
+
+.adress-item,
+.weather-section {
+    background-color: var(--dark-grey-color);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    padding: 1rem;
+    color: var(--white-color);
+}
+
+/* Formatting current weather container */
+
+.weather-section h2,
+.adress-item h2 {
+    border-bottom: solid 1px var(--teal-color);
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: medium;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content-heading {
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.section-content-content {
+    text-align: left;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}

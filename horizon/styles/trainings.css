@@ -1,0 +1,120 @@
+:root {
+    --black-color: #222831;
+    --dark-grey-color: #393E46;
+    --teal-color: #00ADB5;
+    --white-color: #EEEEEE;
+}
+
+main {
+    background-color: var(--black-color);
+}
+/* Formatting training cards */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.grid .header {
+    display: none;
+}
+
+.card {
+    background-color: var(--dark-grey-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--black-color);
+    text-align: center;
+    font-size: small;
+}
+
+.card img {
+    padding: 1rem;
+    object-fit: cover;
+    width: 300px;
+    height: auto;
+}
+
+.card p,
+.card h2 {
+    margin: .5rem;
+}
+
+
+/* Formatting list header */
+
+
+/* Formatting list view */
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+
+.list section,
+.list .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0;
+    align-items: center;
+}
+
+.list .header {
+    text-align: center;
+    color: var(--white-color);
+    margin: 0;
+    font-size: small;
+    padding: 0;
+
+}
+
+.list .header h2 {
+    border-bottom: solid 1px var(--teal-color);
+}
+
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img,
+.list .description,
+.list .description-header {
+    display: none;
+    /* smaller viewports only */
+}
+
+
+.list section:nth-child(even) {
+    background-color: var(--black-color);
+}
+
+.list section h2 {
+    font-size: small;
+}
+
+/* Formatting card menu */
+
+.card-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+
+}
+
+#grid {
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+#list {
+    padding: 0.5rem;
+}

@@ -1,0 +1,149 @@
+body {
+    max-width: 1500px;
+    min-width: 400px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --black-color: #222831;
+    --dark-grey-color: #393E46;
+    --teal-color: #00ADB5;
+    --white-color: #EEEEEE;
+}
+
+body {
+    background-color: var(--black-color);
+}
+
+/* Formatting Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black-color);
+    ;
+    padding: 1rem 2rem;
+    color: var(--white-color);
+    border-bottom: solid 1px black;
+}
+
+header p {
+    font-size: x-small;
+}
+
+.header-container-h {
+    display: flex;
+}
+
+.header-container-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: medium;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    margin-right: 1rem;
+    background-color: var(--white-color);
+}
+
+/* Formatting Navigation */
+
+#animatedNav {
+    background-color: var(--black-color);
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+#staticNav {
+    display: none;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+#animatedNav.open {
+    grid-template-rows: 1fr;
+}
+
+#hamButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+#hamButton::before {
+    content: "\2630";
+
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+ul.menuLinks {
+    display: block;
+    list-style-type: none;
+    /* affects large */
+    margin: 0;
+}
+
+#hamButton.open::before {
+    content: "x";
+}
+
+ul.menuLinks.open {
+    display: block;
+}
+
+
+
+/* Formatting footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    background-color: var(--black-color);
+    padding: 1rem 2rem;
+    align-items: center;
+    border-top: solid 1px black;
+}
+
+footer p {
+    margin: 0;
+    color: var(--white-color);
+    font-size: small;
+}
+
+.sociallinks {
+    display: flex;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: auto;
+    padding-left: 10px;
+}
